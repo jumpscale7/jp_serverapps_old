@@ -1,5 +1,5 @@
 jp.domain=serverapps
-jp.name=jpackages_server
+jp.name=proftpd
 jp.version=1.0
 jp.autobuild=0
 
