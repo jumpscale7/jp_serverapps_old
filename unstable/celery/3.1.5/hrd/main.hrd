@@ -1,4 +1,4 @@
-jp.domain=jumpscale
+jp.domain=serverapps
 jp.name=celery
 jp.version=3.1.5
 jp.autobuild=0
