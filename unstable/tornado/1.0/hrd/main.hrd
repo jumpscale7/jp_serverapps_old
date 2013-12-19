@@ -1,0 +1,25 @@
+jp.domain=jumpscale
+jp.name=tornado
+jp.version=1.0
+jp.autobuild=0
+
+#supported platforms linux, linux32, linux64, win32, win64, win
+jp.supportedplatforms=generic
+jp.description=!(../description.wiki)
+jp.buildnr=2
+
+jp.taskletschecksum=43f48d9c926e83c06b71be3e48e538f5
+jp.descrchecksum=400304f8eea1d81743bad25e030c65e3
+jp.hrdchecksum=7b7a044e71ca2e7d1bbd6895b06faa42
+
+jp.export=0
+
+jp.bundles=generic:fefcce5041ab7e16e78d8d58dab2bc0d
+
+##dependencies
+#jp.dependency.1.name = processmanager
+#jp.dependency.1.domain = jumpscale
+#jp.dependency.1.minversion= 1
+#jp.dependency.1.maxversion= 2
+jp.process.tcpports=
+jp.process.startuptime=30
