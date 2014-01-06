@@ -1,0 +1,4 @@
+
+rsa.email=@ASK descr:email__which__will__be__put__in__your__rsa__key
+rsa.org=@ASK descr:give__a__logical__organization__name default:myorg
+rsa.keypath=/opt/jumpscale/cfg/rsakeys

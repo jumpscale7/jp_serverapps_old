@@ -1,0 +1,6 @@
+
+openvpn.privatenet=@ASK descr:private__net__for__vpn__for__clients default:10.8.0.0/24
+
+#no need to change following
+openvpn.privatenet.net=auto
+openvpn.privatenet.mask=auto
