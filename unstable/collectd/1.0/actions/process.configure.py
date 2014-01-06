@@ -11,7 +11,7 @@ def main(j,jp):
     name = jp.name
     domain = "serverapps"
     ports = []
-    j.tools.startupmanager.addProcess(name=name, cmd=cmd, args=args, env={}, numprocesses=1, priority=1, \
+    j.tools.startupmanager.addProcess(name=name, cmd=cmd, args=args, env={}, numprocesses=1, priority=50, \
        shell=False, workingdir=workingdir,jpackage=jp,domain=domain,ports=ports)
     
     import psutil
@@ -27,6 +27,6 @@ def main(j,jp):
     name = "hddtemp"
     domain = "serverapps"
     ports = []
-    j.tools.startupmanager.addProcess(name=name, cmd=cmd, args=args, env={}, numprocesses=1, priority=1, \
+    j.tools.startupmanager.addProcess(name=name, cmd=cmd, args=args, env={}, numprocesses=1, priority=50, \
        shell=False, workingdir=workingdir,jpackage=jp,domain=domain,ports=ports)
     
