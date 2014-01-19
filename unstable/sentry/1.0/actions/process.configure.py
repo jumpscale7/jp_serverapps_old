@@ -17,7 +17,7 @@ def main(j,jp):
     #can configure more apps to start than just 1 linked to the jpackage
 
 
-    cmd = 'source /opt/sentry/bin/activate;cd /opt/sentry/bin;sentry --config=/opt/sentry/cfg/sentry.conf.py start'
+    cmd = 'source /opt/sentry/bin/activate;cd /opt/sentry;sentry --config=/opt/sentry/cfg/sentry.conf.py start'
     args = ''
     workingdir = ""
     name = 'sentry'

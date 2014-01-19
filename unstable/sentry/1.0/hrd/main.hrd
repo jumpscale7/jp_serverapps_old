@@ -1,4 +1,4 @@
-jp.domain=jumpscale
+jp.domain=serverapps
 jp.name=sentry
 jp.version=1.0
 jp.autobuild=0
@@ -21,3 +21,5 @@ jp.dependency.1.name = postfix
 jp.dependency.1.domain = serverapps
 jp.process.tcpports=
 jp.process.startuptime=30
+jp.dependency.1.minversion=
+jp.dependency.1.maxversion=

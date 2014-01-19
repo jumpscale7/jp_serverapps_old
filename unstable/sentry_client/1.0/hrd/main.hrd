@@ -1,4 +1,4 @@
-jp.domain=jumpscale
+jp.domain=serverapps
 jp.name=sentry_client
 jp.version=1.0
 jp.autobuild=0
