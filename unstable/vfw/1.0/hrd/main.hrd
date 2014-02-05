@@ -17,7 +17,12 @@ jp.descrchecksum=
 jp.hrdchecksum=
 
 ##dependencies
-#jp.dependency.1.name = processmanager
-#jp.dependency.1.domain = jumpscale
+jp.dependency.1.name = grid_portal
+jp.dependency.1.domain = jumpscale
+
+jp.dependency.2.name = agentcontroller
+jp.dependency.2.domain = jumpscale
+
+
 jp.process.tcpports=
 jp.process.startuptime=30
