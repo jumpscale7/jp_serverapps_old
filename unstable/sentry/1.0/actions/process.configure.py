@@ -23,7 +23,7 @@ def main(j,jp):
     name = 'sentry'
     domain = "serverapps"
     ports = [9000]
-    j.tools.startupmanager.addProcess(name=name, cmd=cmd, args=args, env={}, numprocesses=1, priority=2, \
+    j.tools.startupmanager.addProcess(name=name, cmd=cmd, args=args, env={}, numprocesses=1, priority=1, \
        shell=False, workingdir=workingdir,jpackage=jp,domain=domain,ports=ports)
 
 
