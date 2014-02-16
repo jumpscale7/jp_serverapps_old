@@ -1,6 +1,10 @@
 def main(j,jp):
    
-    #configure the package 
+  
+    import JumpScale.lib.lxc
+    # import JumpScale.baselib.netconfig
 
-    pass
-    
+    # if j.console.askYesNo("we will reset your network config on your system, is this ok?"):
+        #DANGEROUS, will reset all your local netconfig of your system
+
+    j.system.platform.lxc.resetNetworkConfigHostSystemDhcpSimple(pubinterface="$(lxc.defaults.pubinterface)")

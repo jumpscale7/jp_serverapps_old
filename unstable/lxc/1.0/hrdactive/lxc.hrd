@@ -1,4 +1,6 @@
 
+lxc.defaults.pubinterface=@ASK default:eth0
+
 lxc.bridge.public=br0
 lxc.bridge.public.gw=
 
