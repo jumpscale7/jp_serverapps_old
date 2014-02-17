@@ -1,7 +1,0 @@
-
-
-sentry.public_key=@ASK default:18275531e40849ae8f259a4edd8f1c22
-sentry.secret_key=@ASK default:d43b0396addb4b789cd6c325a9ceb36e
-sentry.server=@ASK default:127.0.0.1
-sentry.port=9000
-sentry.project=@ASK default:2
