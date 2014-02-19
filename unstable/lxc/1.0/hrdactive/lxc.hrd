@@ -1,14 +1,11 @@
 
 lxc.defaults.pubinterface=@ASK default:eth0
 
-lxc.bridge.public=br0
+lxc.bridge.public.name=br0
 lxc.bridge.public.gw=@ASK
-
-lxc.bridge.management=br0
-lxc.bridge.management.gw=@ASK default:192.168.1.1
 
 lxc.nameserver=@ASK 
 
-lxc.management.iprange=@ASK descr:please_specify_iprange_for_mgmt_of_lxc_machines default:192.168.40.0/24
-lxc.management.ipaddr=
+lxc.management.iprange=@ASK descr:please_specify_iprange_for_mgmt_of_lxc_machines default:10.99.99.0/24
 
+lxc.management.ipaddr=
