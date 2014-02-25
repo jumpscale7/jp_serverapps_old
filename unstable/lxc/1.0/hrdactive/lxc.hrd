@@ -9,3 +9,5 @@ lxc.nameserver=@ASK
 lxc.management.iprange=@ASK descr:please_specify_iprange_for_mgmt_of_lxc_machines default:10.99.99.0/24
 
 lxc.management.ipaddr=
+
+lxc.openvswitch=1
