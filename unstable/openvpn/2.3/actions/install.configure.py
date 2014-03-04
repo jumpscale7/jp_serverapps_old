@@ -18,6 +18,9 @@ def main(j,jp):
 
     execute = j.system.process.executeWithoutPipe
 
+    
+    j.application.config.applyOnDir(appdir)
+
     if not j.system.fs.exists(keydir) or True:
         j.system.fs.createDir(keydir)
         j.system.fs.changeDir(appdir)
@@ -74,4 +77,4 @@ def main(j,jp):
 
     cmd = "openvpn --config /etc/openvpn/server.conf"
 
-    j.tools.startupmanager.addProcess("openvpn", cmd, args="", warmup_delay=0, numprocesses=1, priority=0, autostart=True, workingdir="/etc/openvpn")
+    j.tools.startupmanager.addProcess("openvpn", cmd, args="", numprocesses=1, priority=0, autostart=True, workingdir="/etc/openvpn",domain=jp.domain)
