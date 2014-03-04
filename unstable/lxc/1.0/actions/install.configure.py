@@ -7,4 +7,4 @@ def main(j,jp):
     # if j.console.askYesNo("we will reset your network config on your system, is this ok?"):
         #DANGEROUS, will reset all your local netconfig of your system
 
-    j.system.platform.lxc.resetNetworkConfigHostSystemDhcpSimple()
+    # j.system.platform.lxc.resetNetworkConfigHostSystemDhcpSimple()
