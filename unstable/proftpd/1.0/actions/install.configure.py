@@ -1,7 +1,7 @@
 def main(j,jp):
    
     do = j.system.installtools
-    passwd = "$(jpackageserver.password)"
+    passwd = "$(proftpd.password)"
 
     def initJumpscaleUser(passwd):
         home = "/home/jumpscale"
@@ -18,23 +18,23 @@ def main(j,jp):
         if not homeexists:
             c.dir_ensure(home, owner=name, group=name, mode=770, recursive=True)
 
-        if j.system.fs.exists("/root/.hgrc"):
-            C = j.system.fs.fileGetContents("/root/.hgrc")
-            C2 = ""
+        # if j.system.fs.exists("/root/.hgrc"):
+        #     C = j.system.fs.fileGetContents("/root/.hgrc")
+        #     C2 = ""
 
-            for line in C.split("\n"):
-                if line.find("[trusted]") <> -1:
-                    break
-                C2 += "%s\n" % line
+        #     for line in C.split("\n"):
+        #         if line.find("[trusted]") <> -1:
+        #             break
+        #         C2 += "%s\n" % line
 
-            C2 += "[trusted]\n"
-            C2 += "users = jumpscale\n\n"
+        #     C2 += "[trusted]\n"
+        #     C2 += "users = jumpscale\n\n"
 
-            j.system.fs.writeFile("/root/.hgrc", C2)
+        #     j.system.fs.writeFile("/root/.hgrc", C2)
 
     initJumpscaleUser(passwd)
 
-    j.system.platform.ubuntu.install("proftpd-basic")
+    
 
     j.system.fs.createDir("/opt/jpackagesftp")
 
@@ -60,6 +60,7 @@ SystemLog   /var/log/proftpd/proftpd.log
 DefaultRoot                    ~
 
 <Directory />
+
 AllowOverwrite  on
 
 <Limit WRITE STOR MKD RMD DELE RNTO>
