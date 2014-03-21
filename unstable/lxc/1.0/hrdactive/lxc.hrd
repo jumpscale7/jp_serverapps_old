@@ -1,7 +1,8 @@
 
-lxc.pub.interface=@ASK default:Backplane1
+lxc.pub.interface=@ASK default:Public
 lxc.dmz.interface=@ASK default:None
 
 lxc.mgmt.interface=@ASK default:Mgmt
 lxc.mgmt.ip=@ASK descr:please_specify_ipaddr_with_mask_for_mgmt_of_lxc_machines default:10.99.99.1/24
 
+lxc.mgmt.ipaddresses=
