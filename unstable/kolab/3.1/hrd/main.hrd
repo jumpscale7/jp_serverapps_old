@@ -1,4 +1,4 @@
-jp.domain=serverapps
+jp.domain=jp_serverapps
 jp.name=kolab
 jp.version=3.1
 jp.autobuild=0
@@ -10,7 +10,7 @@ jp.supportedplatforms=ubuntu64
 
 jp.description=!(../description.wiki)
 
-jp.buildnr=7
+jp.buildnr=8
 
 jp.taskletschecksum=432616e6fab9554ea1afc594a409a171
 jp.descrchecksum=400304f8eea1d81743bad25e030c65e3

@@ -1,4 +1,4 @@
-jp.domain=serverapps
+jp.domain=jp_serverapps
 jp.name=lxc
 jp.version=1.0
 jp.autobuild=0
@@ -10,7 +10,7 @@ jp.supportedplatforms=linux
 
 jp.description=!(../description.wiki)
 
-jp.buildnr=5
+jp.buildnr=6
 
 jp.taskletschecksum=
 jp.descrchecksum=

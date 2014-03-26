@@ -1,4 +1,4 @@
-jp.domain=serverapps
+jp.domain=jp_serverapps
 jp.name=nxfree_server
 jp.version=3.5
 jp.autobuild=0
@@ -10,7 +10,7 @@ jp.supportedplatforms=
 
 jp.description=!(../description.wiki)
 
-jp.buildnr=0
+jp.buildnr=1
 
 jp.taskletschecksum=
 jp.descrchecksum=

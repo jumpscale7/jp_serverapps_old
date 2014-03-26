@@ -1,4 +1,4 @@
-jp.domain=serverapps
+jp.domain=jp_serverapps
 jp.name=ceph
 jp.version=0.7
 jp.autobuild=0
@@ -10,7 +10,7 @@ jp.supportedplatforms=ubuntu
 
 jp.description=!(../description.wiki)
 
-jp.buildnr=-1
+jp.buildnr=0
 
 jp.taskletschecksum=
 jp.descrchecksum=

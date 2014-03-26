@@ -1,4 +1,4 @@
-jp.domain=serverapps
+jp.domain=jp_serverapps
 jp.name=proftpd
 jp.version=1.0
 jp.autobuild=0
@@ -6,7 +6,7 @@ jp.autobuild=0
 #supported platforms linux, linux32, linux64, win32, win64, win
 jp.supportedplatforms=generic
 jp.description=!(../description.wiki)
-jp.buildnr=2
+jp.buildnr=3
 
 jp.taskletschecksum=0d8ee34e888620310e73e4f6468a0885
 jp.descrchecksum=400304f8eea1d81743bad25e030c65e3
