@@ -1,4 +1,4 @@
-jp.domain=jp_serverapps
+jp.domain=serverapps
 jp.name=arakoon
 jp.version=1.6.5
 jp.autobuild=0
