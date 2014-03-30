@@ -3,6 +3,7 @@ def main(j,jp):
 	#configure the package 
 
 	import subprocess
+	import os
 	
 	newppa="ppa:formorer/icinga"
 	packs="dbconfig-common icinga icinga-idoutils mysql-server libdbd-mysql mysql-client apache2 apache2-bin apache2-data apache2-utils"
@@ -59,4 +60,15 @@ def main(j,jp):
 	serviceRestart("ido2db")
 	serviceRestart("icinga")
 
+	if os.path.exists('/etc/icinga/objects/vscalers.cfg'):
+		os.system('cp updatenagiosconf.py /etc/icinga')
+		os.system('python /etc/icinga/updatenagiosconf.py')
+	else:
+		os.system('touch /etc/icinga/objects/vscalers.cfg')
+                os.system('cp updatenagiosconf.py /etc/icinga')
+                os.system('python /etc/icinga/updatenagiosconf.py')
+	serviceRestart("icinga")
+	f = open('/etc/crontab', 'a')
+	f.write('*/5 *	* * * root  python /etc/icinga/updatenagiosconf.py')
+	f.close()
 	pass

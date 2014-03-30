@@ -1,4 +1,4 @@
-jp.domain=serverapps
+jp.domain=jp_serverapps
 jp.name=webproxy
 jp.version=1.0
 jp.autobuild=0
