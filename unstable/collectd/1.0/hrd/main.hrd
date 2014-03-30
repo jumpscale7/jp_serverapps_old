@@ -1,4 +1,4 @@
-jp.domain=jp_serverapps
+jp.domain=serverapps
 jp.name=collectd
 jp.version=1.0
 jp.autobuild=0

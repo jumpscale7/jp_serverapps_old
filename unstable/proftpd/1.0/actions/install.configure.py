@@ -95,7 +95,7 @@ AllowOverwrite  on
     do.execute("/etc/init.d/proftpd restart")
 
     # do.createdir("/opt/code")
-    # do.createdir("/opt/jumpscale")
+    # do.createdir("$(jumpscale.paths.base)")
 
     # def symlink(src, dest):
     #     try:
@@ -113,7 +113,7 @@ AllowOverwrite  on
     #     do.execute(cmd)
 
     # symlink("/opt/code", "/home/jumpscale/code")
-    # symlink("/opt/jumpscale", "/home/jumpscale/jumpscale")
+    # symlink("$(jumpscale.paths.base)", "/home/jumpscale/jumpscale")
     # symlink("/opt/jpackagesftp", "/home/jumpscale/jpackages")
     # symlink("/opt/jpackagesftp", "/home/ftp/jpackages")
     # symlink("/opt/jpackagesftp", "/home/jpackages/jpackages")

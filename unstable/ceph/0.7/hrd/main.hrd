@@ -1,4 +1,4 @@
-jp.domain=jp_serverapps
+jp.domain=serverapps
 jp.name=ceph
 jp.version=0.7
 jp.autobuild=0
