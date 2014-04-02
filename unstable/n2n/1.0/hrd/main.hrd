@@ -10,7 +10,7 @@ jp.supportedplatforms=ubuntu64
 
 jp.description=!(../description.wiki)
 
-jp.buildnr=3
+jp.buildnr=5
 
 jp.taskletschecksum=
 jp.descrchecksum=
