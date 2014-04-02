@@ -18,6 +18,7 @@ def main(j,jp):
 
     args='-a %s -c %s -k %s -l %s:85'%(str(net2.ip),netname,secret,tracker)
     # print args
+    j.system.platform.ubuntu.stopService('n2n')
     j.system.platform.ubuntu.serviceInstall('n2n', '/usr/sbin/edge', args)
     j.system.platform.ubuntu.startService('n2n')
 
