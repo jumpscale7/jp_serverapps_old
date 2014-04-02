@@ -10,13 +10,13 @@ def main(j,jp):
     net3=net.replace("/",":")
 
     if j.application.config.getBool("n2n.istracker"):
-        j.system.platform.ubuntu.serviceInstall('n2ntracker', '/usr/bin/supernode',' -l %s'%3444)
+        j.system.platform.ubuntu.serviceInstall('n2ntracker', '/usr/bin/supernode',' -l %s'%85)
         j.system.platform.ubuntu.startService('n2ntracker')
 
 
     
 
-    args='-a %s -c %s -k %s -l %s:3444'%(str(net2.ip),netname,secret,tracker)
+    args='-a %s -c %s -k %s -l %s:85'%(str(net2.ip),netname,secret,tracker)
     # print args
     j.system.platform.ubuntu.serviceInstall('n2n', '/usr/sbin/edge', args)
     j.system.platform.ubuntu.startService('n2n')
