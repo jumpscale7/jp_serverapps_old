@@ -1,0 +1,6 @@
+
+n2n.secret=@ASK
+n2n.tracker=@ASK descr:addr_of_tracker
+n2n.istracker=@ASK type:bool default:0
+n2n.netname=@ASK descr:name_of_network
+n2n.net=@ASK descr:network_addr_eg_10.10.10.200/24 default:10.10.10.200/24

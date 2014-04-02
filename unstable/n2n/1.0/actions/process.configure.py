@@ -1,19 +1,24 @@
 def main(j,jp):
-   
-    #configure the application to autostart
-    
-    # jp.log("set autostart $(jp.name)")
 
-    # #example start osis
-    # cmd = 'python'
-    # args = 'osisServerStart.py'
-    # workingdir = j.system.fs.joinPaths(j.dirs.baseDir, 'apps', 'osis')
-    # name = jp.name
-    # domain = jp.domain
-    # ports = jp.ports
-    # j.tools.startupmanager.addProcess(name=name, cmd=cmd, args=args, env={}, numprocesses=1, priority=1, \
-    #    shell=False, workingdir=workingdir,jpackage=jp,domain=domain,ports=ports)
-    
-    #can configure more apps to start than just 1 linked to the jpackage
+    import netaddr
 
-    pass
+    secret=j.application.config.get("n2n.secret")
+    tracker=j.application.config.get("n2n.tracker")
+    netname=j.application.config.get("n2n.netname")
+    net=j.application.config.get("n2n.net")
+    net2=netaddr.IPNetwork(net)
+    net3=net.replace("/",":")
+
+    if j.application.config.getBool("n2n.istracker"):
+        j.system.platform.ubuntu.serviceInstall('n2ntracker', '/usr/bin/supernode',' -l %s'%3444)
+        j.system.platform.ubuntu.startService('n2ntracker')
+
+
+    
+
+    args='-a %s -c %s -k %s -l %s:3444'%(str(net2.ip),netname,secret,tracker)
+    # print args
+    j.system.platform.ubuntu.serviceInstall('n2n', '/usr/sbin/edge', args)
+    j.system.platform.ubuntu.startService('n2n')
+
+    # edge -a 10.1.2.1 -c mynetwork -k encryptme -l a.b.c.d:xyw
