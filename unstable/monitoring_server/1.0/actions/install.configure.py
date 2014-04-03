@@ -5,7 +5,7 @@ def main(j,jp):
 	import subprocess
 	import os
 	
-	newppa="ppa:formorer/icinga"
+	#newppa="ppa:formorer/icinga"
 	packs="dbconfig-common icinga icinga-idoutils mysql-server libdbd-mysql mysql-client apache2 apache2-bin apache2-data apache2-utils"
 	ido_configfile="/etc/icinga/modules/idoutils.cfg"
 	icinga_configfile="/etc/default/icinga"
@@ -39,8 +39,8 @@ def main(j,jp):
 	    if x != 0:
 	        exit(x)
 	
-	exitcode = subprocess.call(["add-apt-repository -y " + newppa], shell=True)
-	checkStatus(exitcode)
+	#exitcode = subprocess.call(["add-apt-repository -y " + newppa], shell=True)
+	#checkStatus(exitcode)
 	exitcode = subprocess.call(["apt-get install -y " + packs], shell=True)
 	checkStatus(exitcode)
 	
