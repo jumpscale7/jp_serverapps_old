@@ -5,11 +5,13 @@
 
 import requests
 import subprocess
+import getpass
 
-cloudbrokerip = "192.198.94.5"
-username = 'admin'
+
+cloudbrokerip = raw_input("Please insert CloudBroker IP/Hostname: ")
+username = raw_input("Please insert Username: ")
 #password = 'm09m23458kVx0p12sFtr'
-password = 'R00t3r'
+password = getpass.getpass(prompt="Please insert Password: \n",stream=None)
 conffile = "/etc/icinga/objects/vscalers.cfg"
 
 def getLatestConfig(cloudbrokerip, username, password):
