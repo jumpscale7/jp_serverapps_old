@@ -18,8 +18,13 @@ def main(j,jp):
 
     args='-a %s -c %s -k %s -l %s:86 -s 255.255.0.0 -f'%(str(net2.ip),netname,secret,tracker)
     # print args
+    cmd="%s %s"%('/usr/sbin/edge', args) #actual n2n command to run
+    # print cmd
+    cmd="%s & pid=$!; while true; do c=1; ping 10.10.100.5 -c1 >/dev/null || c=0; if [ \"$c\" == \"0\" ]; then kill $pid; exit 1; fi; sleep 5; done"%(cmd)   # die on ping failure
+    # print cmd
+
     j.system.platform.ubuntu.stopService('n2n')
-    j.system.platform.ubuntu.serviceInstall('n2n', '/usr/sbin/edge', args)
+    j.system.platform.ubuntu.serviceInstall('n2n', cmd)
     j.system.platform.ubuntu.startService('n2n')
 
     # edge -a 10.1.2.1 -c mynetwork -k encryptme -l a.b.c.d:xyw
