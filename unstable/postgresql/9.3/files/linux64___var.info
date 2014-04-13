@@ -1,4 +1,4 @@
-6218a57a7a92ff46607f7c30468c191f
+11b44177d4df93626d5cd64a1254a53e
 496561eb6c2efb8c1037dba9aa049757|postgresql/PG_VERSION
 4efffce1eafd97887dfb465c6669e9b4|postgresql/base/1/11883
 107eb4cb330d22c3af2b26be6d579534|postgresql/base/1/11883_fsm
@@ -758,4 +758,4 @@ f11c8332d3f444148c0b8ee83ec5fc6d|postgresql/pg_ident.conf
 0829f71740aab1ab98b33eae21dee122|postgresql/pg_notify/0000
 0829f71740aab1ab98b33eae21dee122|postgresql/pg_subtrans/0000
 e7c5589d9ebf77fc0392e0494040b895|postgresql/pg_xlog/000000010000000000000001
-e5b658bb270d8e812e2cb548b63be9d7|postgresql/postgresql.conf
+7fc1ef43245d8728c3b712f4a918840e|postgresql/postgresql.conf
