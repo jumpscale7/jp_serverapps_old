@@ -1,10 +1,8 @@
 def main(j,jp):
    
-  
+    import JumpScale.baselib.codetools
 
-    from IPython import embed
-    print "DEBUG NOW ooo change ssh config  (install.configure lxc)"
-    embed()
+    editor=j.codetools.getTextFileEditor("/etc/ssh/ssh_config")
+    editor.replace1Line("    GSSAPIAuthentication no",includes=["GSSAPIAuthentication*"],excludes=["#"])
+    editor.save()
     
-    # GSSAPIAuthentication no
-

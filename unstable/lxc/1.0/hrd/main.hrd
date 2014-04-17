@@ -21,3 +21,4 @@ jp.hrdchecksum=
 #jp.dependency.1.domain = jumpscale
 jp.process.tcpports=
 jp.process.startuptime=30
+jp.debug=0
