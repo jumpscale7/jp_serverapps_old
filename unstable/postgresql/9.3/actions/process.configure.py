@@ -49,9 +49,18 @@ def main(j,jp):
         isJSapp=False,\
         upstart=False,\
         stats=True,\
-        processfilterstr="postgres")#what to look for when doing ps ax to find the process
+        processfilterstr="postgresppppp")#what to look for when doing ps ax to find the process
     
     pd.start()
 
-    cmd="cd $base/apps/postgresql/bin;./psql -U postgres template1 -c \"alter user postgres with password '$(system.superadmin.passwd)';\""
+    passwd=j.application.config.get("system.superadmin.passwd")
+    cmd="cd $base/apps/postgresql/bin;./psql -U postgres template1 -c \"alter user postgres with password '%s';\""%passwd
     j.system.process.execute(cmd)
+
+
+    # def sql(sql):
+    #     cmd='$base/apps/postgresql/bin/psql -U postgres -h localhost -c "%s"'%sql
+    #     print cmd
+    #     j.system.process.executeWithoutPipe(cmd)
+
+    # sql("ALTER USER postgres WITH PASSWORD '%s';"%passwd)
