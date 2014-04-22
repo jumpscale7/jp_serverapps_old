@@ -1,4 +1,6 @@
 def main(j,jp):
+
+    import time
    
     #configure the application to autostart
     
@@ -54,9 +56,16 @@ def main(j,jp):
     pd.start()
 
     passwd=j.application.config.get("system.superadmin.passwd")
+
+    j.system.net.waitConnectionTest("localhost", 5432, 5)
+    print "postgresql tcp port responded."
+
+    time.sleep(1)
+
     cmd="cd $base/apps/postgresql/bin;./psql -U postgres template1 -c \"alter user postgres with password '%s';\""%passwd
     j.system.process.execute(cmd)
 
+    print "installed"
 
     # def sql(sql):
     #     cmd='$base/apps/postgresql/bin/psql -U postgres -h localhost -c "%s"'%sql
