@@ -62,7 +62,7 @@ def main(j,jp):
 
     time.sleep(1)
 
-    cmd="cd $base/apps/postgresql/bin;./psql -U postgres template1 -c \"alter user postgres with password '%s';\""%passwd
+    cmd="cd $base/apps/postgresql/bin;./psql -U postgres template1 -c \"alter user postgres with password '%s';\" -h localhost"%passwd
     j.system.process.execute(cmd)
 
     print "installed"
