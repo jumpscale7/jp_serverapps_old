@@ -1,0 +1,23 @@
+jp.domain=serverapps
+jp.name=mailrobot
+jp.version=1.0
+jp.autobuild=0
+
+jp.export=0
+
+#supported platforms linux, linux32, linux64, win32, win64, win
+jp.supportedplatforms=linux
+
+jp.description=!(../description.wiki)
+
+jp.buildnr=3
+
+jp.taskletschecksum=798ef253b55b5d97441f4cbea2bc9676
+jp.descrchecksum=400304f8eea1d81743bad25e030c65e3
+jp.hrdchecksum=0ad664910a921dc4bc6aa6589d85ae0f
+
+##dependencies
+jp.dependency.1.name = libs
+jp.dependency.1.domain = jumpscale
+jp.process.tcpports=
+jp.process.startuptime=30
