@@ -1,4 +1,5 @@
-c660fe359b70ec9259eb6c99dc96a5e6
+68778af436ab27aa801df50bf1fa03e9
 52d4c8fd3eb0df7416265edf9085a5d2|apps/agentcontroller/jumpscripts/mailrobot/mailrobotrequest.py
 558297388a4677b558af8141a99c4491|apps/mailrobot/mailrobot.py
-5a992a2c52dc4c6a78f8fe541405a140|apps/mailrobot/templates/trac.tmpl
+e5b2b085989554307fcd756d8be73db3|apps/mailrobot/templates/default.tmpl
+5993c599058d1fa24d0fc4a4de8f47b8|apps/mailrobot/templates/trac.tmpl
