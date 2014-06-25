@@ -10,7 +10,7 @@ jp.supportedplatforms=linux
 
 jp.description=!(../description.wiki)
 
-jp.buildnr=13
+jp.buildnr=14
 
 jp.taskletschecksum=90104f03c7b78101aa31c3870793fc9f
 jp.descrchecksum=400304f8eea1d81743bad25e030c65e3
@@ -25,3 +25,5 @@ jp.process.tcpports=
 jp.process.startuptime=30
 jp.dependency.1.minversion=
 jp.dependency.1.maxversion=
+jp.dependency.2.minversion=
+jp.dependency.2.maxversion=
