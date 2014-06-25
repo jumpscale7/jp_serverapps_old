@@ -34,12 +34,12 @@ def main(j,jp):
     pd=j.tools.startupmanager.addProcess(\
         name='httprobot',\
         cmd=cmd, \
-        args="mailrobot.py",\
+        args="httprobot.py",\
         env={},\
         numprocesses=1,\
         priority=100,\
         shell=False,\
-        workingdir='$base/apps/httprobot',\
+        workingdir='$base/apps/mailrobot',\
         jpackage=jp,\
         domain=jp.domain,\
         ports=[],\
