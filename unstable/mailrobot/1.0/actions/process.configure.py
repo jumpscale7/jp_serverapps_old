@@ -17,7 +17,7 @@ def main(j,jp):
         jpackage=jp,\
         domain=jp.domain,\
         ports=[],\
-        autostart=0,\
+        autostart=1,\
         reload_signal=0,\
         user="root",\
         log=True,\
@@ -43,7 +43,7 @@ def main(j,jp):
         jpackage=jp,\
         domain=jp.domain,\
         ports=[],\
-        autostart=0,\
+        autostart=1,\
         reload_signal=0,\
         user="root",\
         log=True,\
