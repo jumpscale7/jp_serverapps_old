@@ -1,0 +1,6 @@
+h2. $(jp.name) $(jp.version)
+
+example url: http://192.168.56.1:81/youtrack/
+for hrd youtrackrobot.url
+
+

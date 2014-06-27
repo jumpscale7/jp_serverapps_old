@@ -17,10 +17,11 @@ jp.descrchecksum=400304f8eea1d81743bad25e030c65e3
 jp.hrdchecksum=e0596a404046c7b2ae6d7406c8420b8f
 
 ##dependencies
-jp.dependency.1.name = libs
+jp.dependency.1.name = gsmtpd
 jp.dependency.1.domain = jumpscale
-jp.dependency.2.name = gsmtpd
+jp.dependency.2.name = cloudrobot
 jp.dependency.2.domain = jumpscale
+
 jp.process.tcpports=
 jp.process.startuptime=30
 jp.dependency.1.minversion=
