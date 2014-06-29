@@ -20,7 +20,7 @@ jp.hrdchecksum=e0596a404046c7b2ae6d7406c8420b8f
 jp.dependency.1.name = gsmtpd
 jp.dependency.1.domain = jumpscale
 jp.dependency.2.name = cloudrobot
-jp.dependency.2.domain = jumpscale
+jp.dependency.2.domain = serverapps
 
 jp.process.tcpports=
 jp.process.startuptime=30
@@ -28,3 +28,5 @@ jp.dependency.1.minversion=
 jp.dependency.1.maxversion=
 jp.dependency.2.minversion=
 jp.dependency.2.maxversion=
+
+jp.devel=1
