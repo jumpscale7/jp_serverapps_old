@@ -26,3 +26,5 @@ jp.process.tcpports=
 jp.process.startuptime=30
 
 jp.devel=1
+jp.dependency.1.minversion=
+jp.dependency.1.maxversion=
