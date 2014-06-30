@@ -1,42 +1,57 @@
 def main(j,jp):
-   
-    #configure the application to autostart
+
+    if j.application.sandbox:
+        cmd="$base/bin/python"
+    else:
+        cmd="python"
+
+    pd=j.tools.startupmanager.addProcess(\
+        name=jp.name,\
+        cmd="/etc/init.d/postfix stop;%s mailrobot.py"%cmd, \
+        args="",\
+        env={},\
+        numprocesses=1,\
+        priority=100,\
+        shell=False,\
+        workingdir='$base/apps/cloudrobot',\
+        jpackage=jp,\
+        domain=jp.domain,\
+        ports=[],\
+        autostart=1,\
+        reload_signal=0,\
+        user="root",\
+        log=True,\
+        stopcmd=None,\
+        check=True,\
+        timeoutcheck=20,\
+        isJSapp=0,\
+        upstart=False,\
+        stats=True,\
+        processfilterstr="mailrobot.py")#what to look for when doing ps ax to find the process
     
-    # jp.log("set autostart $(jp.name)")
+    pd.start()
 
-
-    #numprocesses: if more than 1 process, will be started in tmux as $name_$nr
-    #ports: tcpports
-    #autostart: does this app start auto
-    #stopcmd: if special command to stop
-    #check: check app to see if its running
-    #stats: gather statistics by process manager
-    #timeoutcheck: how long do we wait to see if app active
-    #isJSapp: to tell system if process will self register to redis (is jumpscale app)
-
-    # pd=j.tools.startupmanager.addProcess(\
-    #     name=jp.name,\
-    #     cmd="", \
-    #     args="",\
-    #     env={},\
-    #     numprocesses=1,\
-    #     priority=100,\
-    #     shell=False,\
-    #     workingdir='',\
-    #     jpackage=jp,\
-    #     domain=jp.domain,\
-    #     ports=jp.ports,\
-    #     autostart=True,\
-    #     reload_signal=0,\
-    #     user="root",\
-    #     log=True,\
-    #     stopcmd=None,\
-    #     check=True,\
-    #     timeoutcheck=10,\
-    #     isJSapp=1,\
-    #     upstart=False,\
-    #     stats=False,\
-    #     processfilterstr="")#what to look for when doing ps ax to find the process
-    
-    # pd.start()
-    pass
+    pd=j.tools.startupmanager.addProcess(\
+        name='httprobot',\
+        cmd=cmd, \
+        args="httprobot.py",\
+        env={},\
+        numprocesses=1,\
+        priority=100,\
+        shell=False,\
+        workingdir='$base/apps/cloudrobot',\
+        jpackage=jp,\
+        domain=jp.domain,\
+        ports=[],\
+        autostart=1,\
+        reload_signal=0,\
+        user="root",\
+        log=True,\
+        stopcmd=None,\
+        check=True,\
+        timeoutcheck=20,\
+        isJSapp=0,\
+        upstart=False,\
+        stats=True,\
+        processfilterstr="httprobot.py")#what to look for when doing ps ax to find the process
+    pd.start()
