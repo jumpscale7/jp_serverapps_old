@@ -6,7 +6,7 @@ def main(j,jp):
         cmd="python"
 
     pd=j.tools.startupmanager.addProcess(\
-        name=jp.name,\
+        name='mailrobot',\
         cmd="/etc/init.d/postfix stop;%s mailrobot.py"%cmd, \
         args="",\
         env={},\
@@ -16,7 +16,7 @@ def main(j,jp):
         workingdir='$base/apps/cloudrobot',\
         jpackage=jp,\
         domain=jp.domain,\
-        ports=[],\
+        ports=[25],\
         autostart=1,\
         reload_signal=0,\
         user="root",\
@@ -24,7 +24,7 @@ def main(j,jp):
         stopcmd=None,\
         check=True,\
         timeoutcheck=20,\
-        isJSapp=0,\
+        isJSapp=1,\
         upstart=False,\
         stats=True,\
         processfilterstr="mailrobot.py")#what to look for when doing ps ax to find the process
@@ -42,6 +42,31 @@ def main(j,jp):
         workingdir='$base/apps/cloudrobot',\
         jpackage=jp,\
         domain=jp.domain,\
+        ports=[8099],\
+        autostart=1,\
+        reload_signal=0,\
+        user="root",\
+        log=True,\
+        stopcmd=None,\
+        check=True,\
+        timeoutcheck=20,\
+        isJSapp=1,\
+        upstart=False,\
+        stats=True,\
+        processfilterstr="httprobot.py")#what to look for when doing ps ax to find the process
+    pd.start()
+
+    pd=j.tools.startupmanager.addProcess(\
+        name='filerobot',\
+        cmd=cmd, \
+        args="filerobot.py",\
+        env={},\
+        numprocesses=1,\
+        priority=100,\
+        shell=False,\
+        workingdir='$base/apps/cloudrobot',\
+        jpackage=jp,\
+        domain=jp.domain,\
         ports=[],\
         autostart=1,\
         reload_signal=0,\
@@ -50,8 +75,8 @@ def main(j,jp):
         stopcmd=None,\
         check=True,\
         timeoutcheck=20,\
-        isJSapp=0,\
+        isJSapp=1,\
         upstart=False,\
         stats=True,\
-        processfilterstr="httprobot.py")#what to look for when doing ps ax to find the process
+        processfilterstr="filerobot.py")#what to look for when doing ps ax to find the process
     pd.start()
