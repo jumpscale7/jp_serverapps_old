@@ -21,5 +21,3 @@ jp.bundles=generic:fefcce5041ab7e16e78d8d58dab2bc0d
 #jp.dependency.1.domain = jumpscale
 #jp.dependency.1.minversion= 1
 #jp.dependency.1.maxversion= 2
-jp.process.tcpports=
-jp.process.startuptime=30

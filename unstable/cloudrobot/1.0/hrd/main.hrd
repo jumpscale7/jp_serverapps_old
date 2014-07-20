@@ -27,8 +27,6 @@ jp.dependency.3.name = mailclient
 jp.dependency.3.domain = jumpscale
 
 
-jp.process.tcpports=
-jp.process.startuptime=30
 
 jp.devel=1
 jp.dependency.1.minversion=

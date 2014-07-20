@@ -3,8 +3,10 @@ def main(j,jp):
     #stop the application (only relevant for server apps)
     
     jp.log("stop $(jp.name)")
-    j.tools.startupmanager.stopJPackage(jp)
 
-    jp.waitDown(timeout=20)
+    if j.tools.startupmanager.existsJPackage(jp):        
+        j.tools.startupmanager.stopJPackage(jp)
+
+    
 
 

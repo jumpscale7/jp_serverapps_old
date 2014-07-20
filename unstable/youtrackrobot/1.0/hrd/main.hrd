@@ -22,8 +22,6 @@ jp.dependency.1.name = cloudrobot
 jp.dependency.1.domain = serverapps
 
 
-jp.process.tcpports=
-jp.process.startuptime=30
 
 jp.devel=1
 jp.dependency.1.minversion=
