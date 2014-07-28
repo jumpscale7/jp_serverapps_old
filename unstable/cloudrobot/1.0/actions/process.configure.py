@@ -43,7 +43,7 @@ def main(j,jp):
         jpackage=jp,\
         domain=jp.domain,\
         ports=[8099],\
-        autostart=1,\
+        autostart=0,\
         reload_signal=0,\
         user="root",\
         log=True,\
@@ -80,3 +80,4 @@ def main(j,jp):
         stats=True,\
         processfilterstr="filerobot.py")#what to look for when doing ps ax to find the process
     pd.start()
+
