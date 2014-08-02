@@ -1,0 +1,13 @@
+3b252bf345dbb87d59e67b35c193ec37
+6bf7dfcafec308317fd872014001ac48|apps/cloudrobot/__init__.py
+ddb0a0c88e51276ae194d0d5abaf3842|apps/cloudrobot/example_curl_call.sh
+35f4e9d40a3027af4d83c0dcea17d0bf|apps/cloudrobot/example_message.txt
+1117d8d86b6ac9a7255beb7d9ae92716|apps/cloudrobot/filerobot.py
+17bc2e4bf493eb14ba897500df945b0c|apps/cloudrobot/httprobot.py
+ce52ef8c4022d6ce4c939179b0b0f170|apps/cloudrobot/jailTest.py
+14b2d44166947e7465b6be4a872108cf|apps/cloudrobot/mailrobot.py
+e4d9991f4c5b9b0d9ce61211ffb30e2b|apps/cloudrobot/robots.py
+e5b2b085989554307fcd756d8be73db3|apps/cloudrobot/templates/default.tmpl
+5993c599058d1fa24d0fc4a4de8f47b8|apps/cloudrobot/templates/trac.tmpl
+110d41f5a5287527330487a987a04e21|apps/cloudrobot/testrobot.py
+8d138d398c3e80d0afa8e22541cc91e7|apps/cloudrobot/xmpprobot.py
