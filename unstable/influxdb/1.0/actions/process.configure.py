@@ -6,5 +6,5 @@ def main(j,jp):
     args = "-config=%s" % cfgfile
     startstoptimeout = 60
     processfilterstr = "influxdb"
-    j.tools.startupmanager.addProcess(name, cmd, args=args, domain="serverapps",jpackage=jp,ports=[],priority=1,\
+    j.tools.startupmanager.addProcess(name, cmd, workingdir=workingdir, args=args, domain="serverapps",jpackage=jp,ports=[],priority=1,\
         check=True,timeoutcheck=startstoptimeout,isJSapp=0,processfilterstr=processfilterstr,stats=True,upstart=False)
