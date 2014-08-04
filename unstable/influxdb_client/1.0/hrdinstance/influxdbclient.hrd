@@ -1,0 +1,5 @@
+influxdb.client.addr=@ASK default:localhost
+influxdb.client.port=@ASK default:8086
+influxdb.client.login=@ASK default:root
+influxdb.client.passwd=@ASK default:root
+
