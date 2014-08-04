@@ -7,7 +7,7 @@ def main(j,jp):
 
     pd=j.tools.startupmanager.addProcess(\
         name='mailrobot',\
-        cmd="/etc/init.d/postfix stop;%s mailrobot.py"%cmd, \
+        cmd="%s mailrobot.py"%cmd, \
         args="",\
         env={},\
         numprocesses=1,\
