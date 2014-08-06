@@ -1,0 +1,28 @@
+jp.domain=serverapps
+jp.name=robot
+jp.version=1.0
+jp.autobuild=0
+
+jp.export=0
+
+#supported platforms linux, linux32, linux64, win32, win64, win
+jp.supportedplatforms=generic
+
+jp.description=!(../description.wiki)
+
+jp.buildnr=5
+
+jp.taskletschecksum=f920ddf054dad0b6078ac2b92b371d3b
+jp.descrchecksum=400304f8eea1d81743bad25e030c65e3
+jp.hrdchecksum=0ad664910a921dc4bc6aa6589d85ae0f
+
+##dependencies
+jp.dependency.1.name = grid_portal
+jp.dependency.1.domain = jumpscale
+
+jp.dependency.2.name = OSS
+jp.dependency.2.domain = jumpscale
+jp.dependency.2.minversion=
+jp.dependency.2.maxversion=
+jp.dependency.1.minversion=
+jp.dependency.1.maxversion=
