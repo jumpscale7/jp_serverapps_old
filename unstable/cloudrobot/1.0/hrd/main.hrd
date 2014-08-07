@@ -26,8 +26,6 @@ jp.dependency.2.domain = jumpscale
 jp.dependency.3.name = mailclient
 jp.dependency.3.domain = jumpscale
 
-
-
 jp.devel=1
 jp.dependency.1.minversion=
 jp.dependency.1.maxversion=

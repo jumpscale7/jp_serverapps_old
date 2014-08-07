@@ -1,0 +1,3 @@
+youtrack.url=@ASK type:str descr:'url of youtrack instance e.g. http://incubaid.myjetbrains.com/youtrack'
+
+

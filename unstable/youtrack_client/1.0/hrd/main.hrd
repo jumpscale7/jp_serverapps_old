@@ -1,5 +1,5 @@
 jp.domain=serverapps
-jp.name=xmpprobot
+jp.name=youtrack_client
 jp.version=1.0
 jp.autobuild=0
 
@@ -10,14 +10,11 @@ jp.supportedplatforms=generic
 
 jp.description=!(../description.wiki)
 
-jp.buildnr=1
+jp.buildnr=-1
 
 jp.taskletschecksum=
 jp.descrchecksum=
 jp.hrdchecksum=
 
-##dependencies
-jp.dependency.1.name = cloudrobot
-jp.dependency.1.domain = jumpscale
-jp.dependency.1.minversion=
-jp.dependency.1.maxversion=
+
+jp.debug=0
