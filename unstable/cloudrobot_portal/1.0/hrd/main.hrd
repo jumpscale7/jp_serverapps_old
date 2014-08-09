@@ -10,14 +10,16 @@ jp.supportedplatforms=linux
 
 jp.description=!(../description.wiki)
 
-jp.buildnr=-1
+jp.buildnr=3
 
-jp.taskletschecksum=
-jp.descrchecksum=
-jp.hrdchecksum=
+jp.taskletschecksum=dc4eb506b39abcba64107c9ddbebc9dd
+jp.descrchecksum=400304f8eea1d81743bad25e030c65e3
+jp.hrdchecksum=0ad664910a921dc4bc6aa6589d85ae0f
 
 ##dependencies
 #jp.dependency.1.name = processmanager
 #jp.dependency.1.domain = jumpscale
 
 jp.debug=1
+
+jp.app.path=$base/apps/portals/$(cloudrobot.portal.instance)/

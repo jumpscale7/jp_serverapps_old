@@ -10,11 +10,11 @@ jp.supportedplatforms=ubuntu64
 
 jp.description=!(../description.wiki)
 
-jp.buildnr=9
+jp.buildnr=10
 
-jp.taskletschecksum=82a4717e922ef5b855fa7fa3cfb9e631
+jp.taskletschecksum=078cfd9fcd2c27dfb7cc6c19b00c10a7
 jp.descrchecksum=400304f8eea1d81743bad25e030c65e3
-jp.hrdchecksum=a53dc1cfc3cd80801cdfec78ce81e503
+jp.hrdchecksum=903dedf1dcd9cf265cf49254d359af59
 
 ##dependencies
 #jp.dependency.1.name = processmanager

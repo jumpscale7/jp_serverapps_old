@@ -6,11 +6,11 @@ jp.autobuild=0
 #supported platforms linux, linux32, linux64, win32, win64, win
 jp.supportedplatforms=generic
 jp.description=!(../description.wiki)
-jp.buildnr=3
+jp.buildnr=4
 
-jp.taskletschecksum=0d8ee34e888620310e73e4f6468a0885
+jp.taskletschecksum=a4a4856a1d62f1c9f508cfaf756a59a0
 jp.descrchecksum=400304f8eea1d81743bad25e030c65e3
-jp.hrdchecksum=96a86bff7b82754f824d6bff99653377
+jp.hrdchecksum=f866dcfb77eff581a2e8d36cd4621a1e
 
 jp.export=0
 
