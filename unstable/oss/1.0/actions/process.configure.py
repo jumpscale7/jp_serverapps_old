@@ -1,5 +1,5 @@
 def main(j,jp):
-   
+    pass   
     #configure the application to autostart
     
     # jp.log("set autostart $(jp.name)")
@@ -16,16 +16,16 @@ def main(j,jp):
 
     # pd=j.tools.startupmanager.addProcess(\
     #     name=jp.name,\
-    #     cmd="", \
-    #     args="",\
+    #     cmd="python", \
+    #     args="portal_start.py",\
     #     env={},\
     #     numprocesses=1,\
     #     priority=100,\
     #     shell=False,\
-    #     workingdir='',\
+    #     workingdir='$base/apps/oss',\
     #     jpackage=jp,\
-    #     domain=jp.domain,\
-    #     ports=jp.ports,\
+    #     domain="solutions",\
+    #     ports=[82],\
     #     autostart=True,\
     #     reload_signal=0,\
     #     user="root",\
@@ -39,4 +39,3 @@ def main(j,jp):
     #     processfilterstr="")#what to look for when doing ps ax to find the process
     
     # pd.start()
-    pass

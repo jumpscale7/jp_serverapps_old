@@ -1,4 +1,5 @@
 jp.code.account=jumpscale
-jp.code.repo=
+jp.code.repo=oss
 jp.code.type=bitbucket
-jp.code.branch=
+jp.code.branch=default
+

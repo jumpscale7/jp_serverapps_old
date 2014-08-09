@@ -1,0 +1,23 @@
+jp.domain=serverapps
+jp.name=oss
+jp.version=1.0
+jp.autobuild=0
+
+jp.export=0
+
+#supported platforms linux, linux32, linux64, win32, win64, win
+jp.supportedplatforms=linux64
+
+jp.description=!(../description.wiki)
+
+jp.buildnr=5
+
+jp.taskletschecksum=032d9f214a1343f9a3610f0f1bd8dc17
+jp.descrchecksum=400304f8eea1d81743bad25e030c65e3
+jp.hrdchecksum=0ad664910a921dc4bc6aa6589d85ae0f
+
+##dependencies
+
+jp.debug=1
+
+jp.app.path=$base/apps/portals/$(oss.portal.instance)/
